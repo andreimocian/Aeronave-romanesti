@@ -11,12 +11,28 @@ body {
     background-position: center;
 }
 
-.bara{
+nav{
     background-color: rgba(124, 124, 124, 0.8);
+}
+
+.bara, nav p{
+    display: inline-block;
 }
 
 .bara ul li{
     display: inline-block;
+}
+
+nav p a{
+    text-decoration: none;
+    color: white; 
+    font-size: 70px; 
+    text-shadow: -1px 1px 2px #000, 
+                  1px 1px 2px #000, 
+                  1px -1px 0 #000, 
+                  -1px -1px 0 #000; 
+    margin-top: 10px; 
+    margin-left: 25px;
 }
 
 .bara ul li a{
@@ -34,14 +50,4 @@ body {
     color: black;
 }
 
-.avioanec{
-    display: none;
-}
 
-.bara ul li a:hover .avioanec{
-    display: block;
-    position: absolute;
-    background: rgb(124, 124, 124, 0.8);
-    margin-top: 15px;
-    margin-left: 15px;
-}
