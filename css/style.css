@@ -13,8 +13,10 @@ body {
 
 nav{
     background-color: rgba(124, 124, 124, 0.8);
+    width: 100%;
+    height: 10%;
 }
-
+/*
 .bara, nav p{
     display: inline-block;
 }
@@ -22,7 +24,7 @@ nav{
 .bara ul li{
     display: inline-block;
 }
-
+*/
 nav p a{
     text-decoration: none;
     color: white; 
@@ -31,23 +33,46 @@ nav p a{
                   1px 1px 2px #000, 
                   1px -1px 0 #000, 
                   -1px -1px 0 #000; 
-    margin-top: 10px; 
+    margin-top: 5px; 
     margin-left: 25px;
+    float: left;
 }
 
-.bara ul li a{
-    float: right;
+nav ul li{
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li a{
     font-size: 25px;
     margin-left: 12px;
+    margin-top: 25px;
     text-decoration: none;
     color: white;
-    padding: 5px 20px;
+    padding: 8px 18px;
     border: 1px solid white;
+    display: block;
 }
 
-.bara ul li a:hover{
+nav ul li a:hover{
     background-color: white;
     color: black;
+}
+
+.submenu{
+    display: none;
+    position: absolute;
+}
+
+.submenu li a{
+    margin-top: 0px;
+    background-color: rgba(124, 124, 124, 0.8);
+    border: 0px;
+}
+
+nav ul li:hover .submenu{
+    display: block;
 }
 
 
