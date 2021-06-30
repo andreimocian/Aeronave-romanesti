@@ -44,6 +44,7 @@ nav ul li a{
     padding: 8px 18px;
     border: 1px solid white;
     display: block;
+    transition: all 0.2s linear;
 }
 
 nav ul li a:hover{
@@ -51,12 +52,15 @@ nav ul li a:hover{
     color: black;
 }
 
+/*submenu*/
+
 .submenu{
     display: none;
     position: absolute;
+    width: 100%;
 }
 
-.submenu li a{
+.submenu a{
     margin-top: 0px;
     border: 0px;
 }
@@ -64,6 +68,8 @@ nav ul li a:hover{
 nav ul li:hover .submenu{
     display: block;
 }
+
+/*pages*/
 
 .titlu {
     padding: 20px 20px;
